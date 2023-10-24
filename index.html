@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="fondo1">
+    <div class="cuerpo">
+
+        <div class="reproductor">
+            <div class="parte12">
+            <div class="parte1">
+                <img id="imgAlbum" src="img/gerudo.jpg">
+            </div>
+            <div class="parte2">
+                <div>
+                    <h2 style="text-align: center;">Reproductor</h2>
+                </div>
+                <div>
+                    <h3 id="cancion">Canción:</h3>
+                </div>
+                <div class="timeRange">
+                    <p id="tiempoAhora">0:00</p>
+                    <input type="range" step="any" id="$seekbar" value="0" class="progreso">
+                    <p id="tiempoFinal">0:00</p>
+                </div>
+                <div class="botones">
+                    <bottom id="replay" class="boton"><img src="img/repeat-off.png" id="replay-img"></bottom>
+                    <bottom id="before" class="boton"><img src="img/before.png" id="before-img"></bottom>
+                    <bottom id="play" class="boton"><img src="img/play.png" id="play-img"></bottom>
+                    <bottom id="next" class="boton"><img src="img/next.png" id="next-img"></bottom>
+                    <bottom id="random" class="boton"><img src="img/random-off.png" id="random-img"></bottom>
+                </div>
+                <div class="timeRange">
+                    <p>Volumen: </p>
+                    <input type="range" id='volumen' min=0 max=1 step=0.01 value='1'>
+                </div>
+            </div>
+        </div>
+            <div class="parte3">
+                <h3>Canciones:</h3>
+                <div class="cola" id="cola">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <source src="music/dragon.mp3" type="audio/mp3" id="dragon" class="audio">
+    <source src="music/gerudo.mp3" type="audio/mp3" id="gerudo" class="audio">
+    <source src="music/kass.mp3" type="audio/mp3" id="kass" class="audio">
+    <source src="music/midna.mp3" type="audio/mp3" id="midna" class="audio">
+</body>
+
+</html>
